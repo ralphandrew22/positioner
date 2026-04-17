@@ -23,6 +23,7 @@ export const Positioner: React.FC<PositionerProps> = ({coordinates}) => {
     }, [coordinates])
 
     return (
+        <div>
         <Box
             sx={{
                 my: 4,
@@ -68,13 +69,15 @@ export const Positioner: React.FC<PositionerProps> = ({coordinates}) => {
                             })
                         }
                 </Grid>
-                {areInvalidCoordinatesAndDirection && (
+                
+        </Box>
+        {areInvalidCoordinatesAndDirection && (
                     <div>
                         <Alert icon={<CheckIcon fontSize="inherit" />} severity="error">
                             Invalid coordinates and/or position. Please check your inputs and try again.
                         </Alert>
                     </div>
                 )}
-        </Box>
+        </div>
     )
 }

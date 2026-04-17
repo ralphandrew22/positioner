@@ -5,7 +5,7 @@ export const isCoordinateValid = (coordinate: number) => {
 }
 
 export const isDirectionValid = (direction: string) => {
-    return supportedDirections.includes(direction as unknown as Direction);
+    return supportedDirections.includes((direction?.toLowerCase()) as unknown as Direction);
 }
 
 export const parseCoordinatesAndDirection = (coordinatesAndDirection: string) => {

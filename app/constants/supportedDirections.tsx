@@ -1,10 +1,10 @@
-export type Direction = 'NORTH' | 'EAST' | 'SOUTH' | 'WEST';
+export type Direction = 'north' | 'east' | 'south' | 'west';
 
-export const supportedDirections: Direction[] = ['NORTH', 'EAST', 'SOUTH', 'WEST'];
+export const supportedDirections: Direction[] = ['north', 'east', 'south', 'west'];
 
 export const directionToArrowIconMap: Record<Direction, string> = {
-    'NORTH': '0',
-    'EAST': '90',
-    'SOUTH': '180',
-    'WEST': '270',
+    'north': '0',
+    'east': '90',
+    'south': '180',
+    'west': '270',
 }

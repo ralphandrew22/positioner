@@ -88,7 +88,7 @@ export default function Home() {
                             onChange={onDirectionChange}
                         >
                             {supportedDirections.map((direction) => (
-                                <MenuItem key={direction} value={direction}>{direction}</MenuItem>
+                                <MenuItem key={direction} value={direction}>{direction.toUpperCase()}</MenuItem>
                             ))}
                         </Select>
                     </FormControl>
