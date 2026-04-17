@@ -1,6 +1,6 @@
 # Positioner app
 
-Visualizes the position of a marker on a 5x5 grid depending on the coordinates and direction inputs
+Visualizes the position of a marker on a 5x5 grid depending on the coordinates and direction inputs:
 
 ## Getting Started
 
@@ -76,10 +76,22 @@ Built with ❤️ using React Router.
 
 ## Testing the app using Storybook
 
-### Installation
+### Setup
 
 Run storybook
 
 ```bash
 npm run storybook
 ```
+
+### Test positioner
+
+Positioner component accepts a string input based on the format below
+
+```bash
+{x coordinate},{y coordinate} {direction}
+```
+
+1. x and y coordinates are positive integers to place the marker on the 5x5 grid
+2. direction is one of the cardinal positions (case-insensitive): NORTH, SOUTH, EAST, WEST
+3. Invalid values on any of this will show an error message
