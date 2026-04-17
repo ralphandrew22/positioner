@@ -1,18 +1,6 @@
-# Welcome to React Router!
+# Positioner app
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+Visualizes the position of a marker on a 5x5 grid depending on the coordinates and direction inputs
 
 ## Getting Started
 
@@ -85,3 +73,13 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 ---
 
 Built with ❤️ using React Router.
+
+## Testing the app using Storybook
+
+### Installation
+
+Run storybook
+
+```bash
+npm run storybook
+```
